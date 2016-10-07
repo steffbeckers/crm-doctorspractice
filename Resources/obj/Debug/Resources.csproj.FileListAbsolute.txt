@@ -1,0 +1,6 @@
+C:\Dev\BSS.CRM\BSS CRM Solution\Resources\bin\Font Office Scripts.dll.config
+C:\Dev\BSS.CRM\BSS CRM Solution\Resources\bin\Font Office Scripts.dll
+C:\Dev\BSS.CRM\BSS CRM Solution\Resources\bin\Font Office Scripts.pdb
+C:\Dev\BSS.CRM\BSS CRM Solution\Resources\obj\Debug\Resources.csprojResolveAssemblyReference.cache
+C:\Dev\BSS.CRM\BSS CRM Solution\Resources\obj\Debug\Font Office Scripts.dll
+C:\Dev\BSS.CRM\BSS CRM Solution\Resources\obj\Debug\Font Office Scripts.pdb

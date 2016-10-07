@@ -1,0 +1,68 @@
+﻿* {
+    font-family: Segoe\000020UI,Tahoma,Arial;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.axle {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.position {
+    display: inline-block;
+    width: 40px;
+    height: 100px;
+    border: 1px solid #dedbdb;
+    position: relative;
+}
+
+    .position.center {
+        border: 1px solid #dbb296;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .position.hasTire > div {
+        background-color: #717171;
+        border: 2px solid #000000;
+        border-radius: 16px;
+        position: absolute;
+        height: 92px;
+        width: 32px;
+        top: 2px;
+        left: 50%;
+        margin-left: -18px;
+    }
+
+.sposition:after {
+    border-radius: 50%;
+    bottom: -22px;
+    content: "";
+    height: 18px;
+    left: 50%;
+    margin-left: -11px;
+    position: absolute;
+    width: 18px;
+    border: 2px solid #ccc;
+}
+
+.ms-crm-ImageStrip-grid_refresh {
+    /* CRM styles*/
+    background: transparent url(/_imgs/imagestrips/grid_ctrl_imgs.png?ver=277041947) no-repeat scroll -171px -1px;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    cursor: pointer;
+
+    /* Other styles */
+    float: right;
+}

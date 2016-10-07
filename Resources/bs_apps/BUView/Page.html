@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+
+    <script src="../../../WebResources/ClientGlobalContext.js.aspx"></script>
+    <script src="../../bs_scripts/jquery.js"></script>
+    <script src="../../bs_scripts/knockout.js"></script>
+    <script src="../../bs_scripts/polyfill.min.js"></script>
+    <script src="../../bs_scripts/Helpers.js"></script>
+    <script src="../../bs_scripts/Data.js"></script>
+
+    <script src="App.js"></script>
+
+    <link href="StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+
+    <script type="text/html" id="node-template">
+        <li data-bind="css: { currentRecord: isCurrentRecord }">
+            <a href='#' data-bind="text: name"></a>
+
+            <ul data-bind="template: { name: 'node-template', foreach: subNodes }, visible: subNodes().length > 0"></ul>
+        </li>
+    </script>
+
+    <div class="tree-parent">
+        <div class="tree">
+            <ul data-bind="template: { name: 'node-template', foreach: nodes }"></ul>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+</body>
+</html>

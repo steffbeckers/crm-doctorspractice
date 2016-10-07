@@ -1,0 +1,4 @@
+﻿First Time:
+* Open "CMD" and go to the folder where the "gulpfile.js" is located
+* Do "npm install"
+* There after type "Gulp" and check if everything could be compiled

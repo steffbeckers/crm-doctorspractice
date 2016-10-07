@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+
+    <script src="../../../WebResources/ClientGlobalContext.js.aspx"></script>
+    <script src="../../bs_scripts/jquery.js"></script>
+    <script src="../../bs_scripts/knockout.js"></script>
+    <script src="../../bs_scripts/polyfill.min.js"></script>
+    <script src="../../bs_scripts/Helpers.js"></script>
+    <script src="../../bs_scripts/Data.js"></script>
+
+    <script src="App.js"></script>
+
+    <link href="StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <div style="height: 20px">
+        <div class="ms-crm-ImageStrip-grid_refresh" data-bind="click: refresh"></div>
+    </div>
+    <div data-bind="foreach: axles">
+        <div class="axle">
+            <div data-bind="text: bs_code" class="title"></div>
+
+            <div class="position" data-bind="css: { hasTire: bs_numberoftyres > 1}"><div></div></div>
+            <div class="position" data-bind="css: { hasTire: bs_numberoftyres > 3}"><div></div></div>
+            <div class="position" data-bind="css: { hasTire: bs_numberoftyres > 5}"><div></div></div>
+            <div class="position" data-bind="css: { hasTire: bs_numberoftyres > 7}"><div></div></div>
+            <div class="position center" data-bind="css: { hasTire: (bs_numberoftyres % 2) != 0}"><div></div></div>
+            <div class="position" data-bind="css: { hasTire: bs_numberoftyres > 7}"><div></div></div>
+            <div class="position" data-bind="css: { hasTire: bs_numberoftyres > 5}"><div></div></div>
+            <div class="position" data-bind="css: { hasTire: bs_numberoftyres > 3}"><div></div></div>
+            <div class="position" data-bind="css: { hasTire: bs_numberoftyres > 1}"><div></div></div>
+        </div>
+    </div>
+</body>
+</html>
